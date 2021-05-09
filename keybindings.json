@@ -4,12 +4,12 @@
   // --------------------------------------------------
   // サイドバーの表示トグル
   {
-    "key": "ctrl+d",
+    "key": "space e",
     "command": "workbench.view.explorer",
     "when": "!explorerViewletVisible && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
   },
   {
-    "key": "ctrl+d",
+    "key": "space e",
     "command": "workbench.action.toggleSidebarVisibility",
     "when": "explorerViewletVisible && !searchViewletVisible && !inDebugMode && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
   },
