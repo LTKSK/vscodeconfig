@@ -4,12 +4,12 @@
   // --------------------------------------------------
   // サイドバーの表示トグル
   {
-    "key": "space e",
+    "key": "ctrl+d",
     "command": "workbench.view.explorer",
     "when": "!explorerViewletVisible && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
   },
   {
-    "key": "space e",
+    "key": "ctrl+d",
     "command": "workbench.action.toggleSidebarVisibility",
     "when": "explorerViewletVisible && !searchViewletVisible && !inDebugMode && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
   },
@@ -28,6 +28,7 @@
     "command": "list.toggleExpand",
     "when": "explorerViewletFocus && explorerViewletVisible && explorerResourceIsFolder"
   },
+  // 保存
   {
     "key": "shift+k",
     "command": "editor.action.showHover",
@@ -114,5 +115,20 @@
         "key": "m f",
         "command": "explorer.newFolder",
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+q",
+        "command": "-workbench.action.quickOpenNavigatePreviousInViewPicker",
+        "when": "inQuickOpen && inViewsPicker"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quickOpenNavigateNextInViewPicker",
+        "when": "inQuickOpen && inViewsPicker"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-extension.vim_winCtrlQ",
+        "when": "editorTextFocus && vim.active && vim.use<C-q> && !inDebugRepl"
     },
 ]

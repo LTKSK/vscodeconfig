@@ -4,7 +4,9 @@
     "editor.insertSpaces": true,
     "editor.detectIndentation": false,
     "editor.tabSize": 4,
-    "editor.rulers": [80],
+    "editor.rulers": [
+        80
+    ],
     "files.autoGuessEncoding": true,
     "files.trimTrailingWhitespace": true,
     "git.ignoreLegacyWarning": true,
@@ -12,7 +14,10 @@
     "prettier.tabWidth": 2,
     "editor.fontFamily": "Consolas, Meiryo, 'Courier New', monospace",
     "go.formatTool": "goimports",
-    "python.formatting.autopep8Args": ["--ignore","E402"],
+    "python.formatting.autopep8Args": [
+        "--ignore",
+        "E402"
+    ],
     "[plaintext]": {
         "editor.acceptSuggestionOnEnter": "off",
     },
@@ -25,7 +30,8 @@
         "editor.formatOnSave": true
     },
     "[rust]": {
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "rust-lang.rust"
     },
     "[html]": {
         "editor.tabSize": 2,
@@ -41,7 +47,7 @@
     },
     "[typescript]": {
         "editor.formatOnSave": true,
-        "editor.tabSize": 4
+        "editor.tabSize": 2
     },
     "[typescriptreact]": {
         "editor.formatOnSave": true,
@@ -72,33 +78,62 @@
     "vim.useCtrlKeys": true,
     "vim.insertModeKeyBindings": [
         {
-        "before": ["j", "j"],
-        "after": ["<Esc>"]
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
     ],
     "vim.normalModeKeyBindings": [
         {
-        "before": ["<space>", "h"],
-        "after": ["C-w", "h"]
+            "before": [
+                "<space>",
+                "h"
+            ],
+            "after": [
+                "C-w",
+                "h"
+            ]
         },
         {
-        "before": ["<space>", "j"],
-        "after": ["C-w", "j"]
+            "before": [
+                "<space>",
+                "j"
+            ],
+            "after": [
+                "C-w",
+                "j"
+            ]
         },
         {
-        "before": ["<space>", "k"],
-        "after": ["C-w", "k"]
+            "before": [
+                "<space>",
+                "k"
+            ],
+            "after": [
+                "C-w",
+                "k"
+            ]
         },
         {
-        "before": ["<space>", "l"],
-        "after": ["C-w", "l"]
+            "before": [
+                "<space>",
+                "l"
+            ],
+            "after": [
+                "C-w",
+                "l"
+            ]
         }
     ],
     "search.exclude": {
         "**/bower_components": true,
         "**/vendor": true,
         "**/env": true,
-        "tags":true,
+        "tags": true,
         "**/.svn": true,
         "**/.git": true,
         "**/.DS_Store": true
@@ -108,7 +143,10 @@
     "vim.visualstar": true,
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["leader", "w"],
+            "before": [
+                "leader",
+                "w"
+            ],
             "after": [],
             "commands": [
                 {
@@ -126,27 +164,26 @@
     "window.zoomLevel": 0,
     "terraform.languageServer": {
         "external": true,
-        "args": ["serve"]
-    },
-    "editor.formatOnSave": true,
-    "rust.rustup": {
-        "toolchain": "nightly-x86_64-pc-windows-msvc",
-        "nightlyToolchain": "nightly-x86_64-pc-windows-msvc"
+        "args": [
+            "serve"
+        ]
     },
     "files.saveConflictResolution": "overwriteFileOnDisk",
     "editor.acceptSuggestionOnEnter": "on",
     "python.defaultInterpreterPath": "C:\\Python36-32\\python.exe",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.showTabs": true, //タブで見えるようにしないと何が開いているのかわからない
     "workbench.editor.enablePreview": true,
     "workbench.editor.enablePreviewFromQuickOpen": true,
-    // "vscode-neovim.neovimExecutablePaths.linux": "/home/linuxbrew/.linuxbrew/bin/nvim",
-    // "vscode-neovim.neovimExecutablePaths.win32": "C:\\Users\\Keisuke\\Desktop\\neovim-5.0\\bin\\nvim.exe",
-    // "vscode-neovim.neovimInitVimPaths.win32": "~\\AppData\\Local\\nvim\\init.vim"
+    "go.toolsManagement.autoUpdate": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "svg.preview.mode": "svg",
+    "bracketPairColorizer.depreciation-notice": false,
 }
