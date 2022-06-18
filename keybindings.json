@@ -1,9 +1,6 @@
-// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+// Place your key bindings in this file to override the defaults
 [
-  // サイドバーの制御
-  // --------------------------------------------------
-  // サイドバーの表示トグル
-  {
+     {
     "key": "ctrl+d",
     "command": "workbench.view.explorer",
     "when": "!explorerViewletVisible && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
@@ -130,5 +127,25 @@
         "key": "ctrl+q",
         "command": "-extension.vim_winCtrlQ",
         "when": "editorTextFocus && vim.active && vim.use<C-q> && !inDebugRepl"
+    },
+
+    // vimのC-jをキャンセルして、デフォルトのterminal開閉にしている
+    {
+        "key": "ctrl+j",
+        "command": "-extension.vim_ctrl+j",
+        "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+    },
+
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "alt+right",
+        "command": "-workbench.action.navigateForward"
     },
 ]
